@@ -6,7 +6,7 @@ function findIndex(array, value) {
         }
     }
 
-         return -1;
+    return -1;
 
 }
 
