@@ -6,6 +6,8 @@ function findIndex(array, value) {
         }
     }
 
+    return -1;
+
 }
 
 module.exports = { findIndex };
