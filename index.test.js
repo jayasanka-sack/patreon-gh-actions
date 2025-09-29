@@ -6,6 +6,7 @@ describe('findIndex', () => {
         expect(findIndex(array, 3)).toBe(2);
         expect(findIndex(array, 1)).toBe(0);
         expect(findIndex(array, 5)).toBe(4);
+
     });
 
     test('should work with string arrays', () => {
@@ -20,5 +21,11 @@ describe('findIndex', () => {
         expect(findIndex(mixedArray, true)).toBe(2);
         expect(findIndex(mixedArray, null)).toBe(3);
         expect(findIndex(mixedArray, undefined)).toBe(4);
+    });
+
+    test('should return -1 when value is not found', () => {
+        const array = [1, 2, 3, 4, 5];
+        expect(findIndex(array, 6)).toBe(-1);
+        expect(findIndex(array, 0)).toBe(-1);
     });
 });

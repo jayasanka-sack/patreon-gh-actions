@@ -8,7 +8,8 @@
   "scripts": {
     "test": "jest",
     "build": "node index.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
